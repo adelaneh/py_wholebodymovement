@@ -78,7 +78,7 @@ if __name__ == "__main__":
             "setuptools",
             "pandas",
             "nose",
-            "numpy==1.16",
+            "numpy",
             "scipy",
             "scikit-learn==0.22.1",
             "pywavelets"
@@ -87,7 +87,7 @@ if __name__ == "__main__":
             "setuptools",
             "pandas",
             "nose",
-            "numpy==1.16",
+            "numpy",
             "scipy",
             "scikit-learn==0.22.1",
             "pywavelets"
