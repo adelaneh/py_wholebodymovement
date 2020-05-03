@@ -17,9 +17,10 @@ years of experience and ongoing efforts in analyzing such data in the context
 of studying motor challenges in individuals with neurodevelopmental disorders 
 and as such, subject to change, improvement and expansion.
 
-.. image:: https://github.com/adelaneh/py_wholebodymovement/blob/master/docs/images/silhouette.png
-   :height: 28px
+.. raw:: html
 
+    <img src="https://github.com/adelaneh/py_wholebodymovement/blob/master/docs/images/silhouette.png" height="40px">
+    
 *More details to come!*
 
 The package is free, open-source, and BSD-licensed.
