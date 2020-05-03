@@ -1,0 +1,3 @@
+v0.1.0 -
+  * Initial release.
+  * Contains classes and utility functions for modeling, analysis and visualization of whole body movement data..

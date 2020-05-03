@@ -1,0 +1,60 @@
+package:
+  name: py_wholebodymovement
+  version: "0.1.0"
+
+source:
+    git_url: ../
+
+
+requirements:
+  build:
+    - python=3.7.0
+    - setuptools
+    - pandas
+    - nose
+    - numpy
+    - scipy
+    - scikit-learn=0.22.1
+    - matplotlib
+    - notebook=5.7.8
+    - jupyter_contrib_nbextensions
+    - pywavelets
+
+  run:
+    - python=3.7.0
+    - setuptools
+    - pandas
+    - nose
+    - numpy
+    - scipy
+    - scikit-learn=0.22.1
+    - matplotlib
+    - notebook=5.7.8
+    - jupyter_contrib_nbextensions
+    - pywavelets
+
+test:
+  # Python imports
+  imports:
+    - py_wholebodymovement
+
+  # commands:
+    # You can putls test commands to be run here.  Use this to test that the
+    # entry points work.
+
+
+  # You can also put a file called run_test.py in the recipe that will be run
+  # at test time.
+
+  # requires:
+    # Put any additional test requirements here.  For example
+    # - nose
+
+about:
+  home: http://www.columbia.edu/~aa4348/py_wholebodymovement
+  license: BSD License
+  summary: 'Python library for modeling whole body movement kinematics.'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
