@@ -1,7 +1,7 @@
 .. image:: https://travis-ci.org/adelaneh/py_wholebodymovement.svg?branch=master
   :target: https://travis-ci.org/adelaneh/py_wholebodymovement
 
-.. image:: https://ci.appveyor.com/api/projects/status/88ki1hfa9sr7tr3g?svg=true
+.. image:: https://ci.appveyor.com/api/projects/status/kj19k1w8q9v8b4tf?svg=true
   :target: https://ci.appveyor.com/project/adelaneh/py-wholebodymovement
 
 .. image:: https://coveralls.io/repos/github/adelaneh/py_wholebodymovement/badge.svg
