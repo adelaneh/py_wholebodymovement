@@ -4,7 +4,6 @@ channels:
   - adelaneh
   - defaults
 dependencies:
-    - python~=3.7.0
     - setuptools
     - pandas
     - nose
