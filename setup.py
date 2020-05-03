@@ -87,9 +87,6 @@ if __name__ == "__main__":
             "numpy",
             "scipy",
             "scikit-learn=0.22.1",
-            "matplotlib",
-            "notebook<=5.7.8",
-            "jupyter_contrib_nbextensions",
             "pywavelets"
         ],
         setup_requires=[
@@ -100,9 +97,6 @@ if __name__ == "__main__":
             "numpy",
             "scipy",
             "scikit-learn=0.22.1",
-            "matplotlib",
-            "notebook<=5.7.8",
-            "jupyter_contrib_nbextensions",
             "pywavelets"
         ],
         include_package_data=True,
