@@ -80,7 +80,7 @@ if __name__ == "__main__":
             "nose",
             "numpy",
             "scipy",
-            "scikit-learn=0.22.1",
+            "scikit-learn==0.22.1",
             "pywavelets"
         ],
         setup_requires=[
@@ -89,7 +89,7 @@ if __name__ == "__main__":
             "nose",
             "numpy",
             "scipy",
-            "scikit-learn=0.22.1",
+            "scikit-learn==0.22.1",
             "pywavelets"
         ],
         include_package_data=True,
