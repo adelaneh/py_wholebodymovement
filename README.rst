@@ -42,7 +42,7 @@ The required dependencies to build the packages are:
 * scipy (provides mathematical functionalities, for example, for interpolation)
 * scikit-learn (provides mathematical and machine learning functionalities)
 * matplotlib (provides tools to create plots and animations)
-* pywt (used to denoise the data using wavelet transform)
+* pywavelets (used to denoise the data using wavelet transform)
 
 Platforms
 =========
