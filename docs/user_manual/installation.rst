@@ -13,9 +13,11 @@ Platforms
 Dependencies
 ------------
 * pandas (provides data structures to store and manage tables)
-* numpy (version 1.16, used to store similarity matrices and required by pandas)
-* tensorflow (version 1.15, used to implement the RNNs and optimize them)
-* tqdm (provides progress tracking facilities for training the networks)
+* numpy (used to store similarity matrices and required by pandas)
+* scipy (provides mathematical functionalities, for example, for interpolation)
+* scikit-learn (provides mathematical and machine learning functionalities)
+* matplotlib (provides tools to create plots and animations)
+* pywavelets (used to denoise the data using wavelet transform)
 
 .. Installing Using pip
 .. --------------------
