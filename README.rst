@@ -18,6 +18,7 @@ of studying motor challenges in individuals with neurodevelopmental disorders
 and as such, subject to change, improvement and expansion.
 
 .. image:: https://github.com/adelaneh/py_wholebodymovement/blob/master/docs/images/silhouette.png
+   :height: 28px
 
 *More details to come!*
 
@@ -57,8 +58,7 @@ Usage
 
 See the accompanying notebooks:
 
-* `Preliminary analysis of gameplay data captured by PlayingForward's 
-Gaitway toollkit <notebooks/GaitWayCapturedDataPrelimAnalysis.ipynb>`_
+* `Preliminary analysis of gameplay data captured by PlayingForward's Gaitway toollkit <notebooks/GaitWayCapturedDataPrelimAnalysis.ipynb>`_
 * More notebooks to come.
 
 References
