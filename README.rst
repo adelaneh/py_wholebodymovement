@@ -19,7 +19,7 @@ and as such, subject to change, improvement and expansion.
 
 .. raw:: html
 
-    <img src="https://github.com/adelaneh/py_wholebodymovement/blob/master/docs/images/silhouette.png" height="40px">
+    <p align="center"><img src="https://github.com/adelaneh/py_wholebodymovement/blob/master/docs/images/silhouette.png" height="300px"></p>
     
 *More details to come!*
 
