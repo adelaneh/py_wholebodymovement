@@ -80,7 +80,7 @@ if __name__ == "__main__":
         ],
         packages=packages,
         install_requires=[
-            "python==3.7.*",
+            "python~=3.7.0",
             "setuptools",
             "pandas",
             "nose",
@@ -90,7 +90,7 @@ if __name__ == "__main__":
             "pywavelets"
         ],
         setup_requires=[
-            "python==3.7.*",
+            "python~=3.7.0",
             "setuptools",
             "pandas",
             "nose",

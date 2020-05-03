@@ -1,5 +1,5 @@
 pandas
-python==3.7.*
+python~=3.7.0
 pywavelets
 scikit-learn==0.22.1
 scipy
