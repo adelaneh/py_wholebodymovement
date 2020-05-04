@@ -13,5 +13,5 @@ gives a quick tour on installing and using Jupyter notebook.
 
 Motion Capture Data Analysis
 ----------------------------
-* Preliminary analysis of gameplay data captured by PlayingForward's Gaitway toollkit `Jupyter notebook <https://nbviewer.jupyter.org/github/adelaneh/py_clifford/blob/rel_0.1.x/notebooks/GaitWayCapturedDataPrelimAnalysis.ipynb>`_
+* Preliminary analysis of gameplay data captured by PlayingForward's Gaitway toollkit `Jupyter notebook <https://nbviewer.jupyter.org/github/adelaneh/py_wholebodymovement/blob/rel_0.1.x/notebooks/GaitWayCapturedDataPrelimAnalysis.ipynb>`_
 
