@@ -309,3 +309,43 @@ def calculate_phase_angle_measures(df, dims, should_remove_outliers=False):
     crpsd     = np.std(crp)
 
     return crp, marp, mrp, crpsd
+
+def calculate_fft_based_synchrony_measures(df, dims, should_remove_outliers=False):
+    """Calculate various synchrony measures using fast Fourier transform (FFT)
+
+    Currently, the only calculated measure is the variance of the dominant frequencies 
+    of the signals corresponding to the series in `dims` columns of `df`.
+
+    Args:
+        df: DataFrame, input data
+        dims: tuple, the two dimensions (angle) in `df` to compute the PA measures for
+        should_remove_outliers: bool, whether to remove outliers before calculating the PA measures
+
+    Returns:
+        tuple:
+
+            - dominant_freqs_var: float, variance of the dominant frequencies in `dominant_freqs` (see below)
+            - dominant_freqs: dict, dominant frequencies of each dimension in `dims`
+    """
+    if df is None:
+        raise TypeError("No input data provided.")
+    if dims is None or not isinstance(dims, (tuple, list)):
+        raise TypeError("Invalid input dimensions.")
+    if len(dims) < 2:
+        raise ValueError("Need two or more angles to compute the measures; %d provided."%len(dims))
+
+    dominant_freqs = {}
+
+    for dim in dims:
+        sig                 = df.loc[:, dim]
+        yy                  = clean_gaussian_outliers(sig) if should_remove_outliers else sig
+        yy                  = yy - np.mean(yy)
+
+        yy_fft              = np.abs(np.fft.fft(yy))[0:int(len(yy)/2)]
+        yy_top_freq         = np.argmax(yy_fft)
+        dominant_freqs[dim] = yy_top_freq
+
+    dominant_freqs_var = np.var(list(dominant_freqs.values()))
+
+    return dominant_freqs_var, dominant_freqs
+

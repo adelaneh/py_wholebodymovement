@@ -11,6 +11,7 @@ from py_wholebodymovement.articulated_figure import extend_3d_articulated_figure
 from py_wholebodymovement.articulated_figure import calculate_phase_locking_value
 from py_wholebodymovement.articulated_figure import calculate_phase_angles
 from py_wholebodymovement.articulated_figure import calculate_phase_angle_measures
+from py_wholebodymovement.articulated_figure import calculate_fft_based_synchrony_measures
 
 import py_wholebodymovement.utils.predefined_schemas as predefined_schemas
 
