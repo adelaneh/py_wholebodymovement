@@ -106,7 +106,7 @@ _JOINT_NAMES_3 = [
 ]
 
 _EXTENDED_JOINT_NAMES_3 = {
-    'vaxis': ('LeftHip', 'RightHip', 'LeftShoulder', 'RightShoulder'), ## Vertical Axis
+    'spinem_at_neck': ('SpineM', 'SpineM', 'Neck', 'Neck', 'SpineM', 'SpineM'), ## SpineM (torso) at neck height
 }
 
 _ARTICULATED_FIGURE_ANGLES_3 = {
@@ -127,6 +127,6 @@ _ARTICULATED_FIGURE_ANGLES_3 = {
     'rwst_theta': ("SpineB", "Neck", "RightHip", 1, True), ## SpineB/Right Hip
     'lwst_theta': ("SpineB", "Neck", "LeftHip", -1, True), ## SpineB/Left Hip
     'trso_theta': ("SpineM", "Neck", "SpineB", 1, True), ## SpineM	
-    'tkf_theta': ("SpineM", "vaxis", "Neck", 1, False), ## Neck->Torso->VerticalAxis
+    'tkf_theta': ("SpineM", "spinem_at_neck", "Neck", 1, False), ## Neck->Torso->TorsoAtNeckHeight
 }
 
