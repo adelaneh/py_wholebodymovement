@@ -1,3 +1,5 @@
 v0.1.0 -
   * Initial release.
   * Contains classes and utility functions for modeling, analysis and visualization of whole body movement data..
+v0.1.1 -
+  * Improved the efficiency of AF angle calculations by using numpy/pandas batch operations

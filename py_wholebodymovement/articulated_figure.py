@@ -30,24 +30,23 @@ def calculate_2d_articulated_figure_angle(df, o_dim, e1_dim, e2_dim, z_dir=1, po
        e2_dim is None or e2_dim == "":
         raise TypeError("Invalid dimension name(s).")
 
-    thetas = []
+    o_e1_vecs = np.array([df[e1_dim + x_suffix] - df[o_dim + x_suffix],
+                          df[e1_dim + y_suffix] - df[o_dim + y_suffix],
+                          df.shape[0]*[0.,]]).transpose()
+    o_e2_vecs = np.array([df[e2_dim + x_suffix] - df[o_dim + x_suffix],
+                          df[e2_dim + y_suffix] - df[o_dim + y_suffix],
+                          df.shape[0]*[0.,]]).transpose()
+    cc = np.cross(o_e1_vecs, o_e2_vecs)
+    _thetas = np.arctan2(np.einsum('ij,ij->i', cc, np.array(df.shape[0]*[(0,0,z_dir)])), 
+                         np.einsum('ij,ij->i', o_e1_vecs, o_e2_vecs)
+                        )*180./np.pi
+    if pos_angles:
+        thetas = pd.Series(_thetas).apply(lambda x: x if x >= 0 else 360. + x).values
+    else:
+        thetas = _thetas
+    if thetas is None or np.any(np.isnan(thetas)):
+        raise ValueError("nan theta value for vectors " + str(o_e1_vecs) + " and " + str(o_e2_vecs))
 
-    for idx, row in df.iterrows():
-        o_e1_vec = (row[e1_dim + x_suffix] - row[o_dim + x_suffix],
-                    row[e1_dim + y_suffix] - row[o_dim + y_suffix],
-                    0.)
-        o_e2_vec = (row[e2_dim + x_suffix] - row[o_dim + x_suffix],
-                    row[e2_dim + y_suffix] - row[o_dim + y_suffix],
-                    0.)
-        cc = np.cross(o_e1_vec, o_e2_vec)
-        _theta = np.arctan2(np.dot(cc, (0,0,z_dir)), np.dot(o_e1_vec, o_e2_vec))*180./np.pi
-        if pos_angles:
-            theta = _theta if _theta > 0 else 360. + _theta
-        else:
-            theta = _theta
-        if theta is None or np.isnan(theta):
-            raise ValueError("nan theta value for vectors " + str(o_e1_vec) + " and " + str(o_e2_vec))
-        thetas.append(theta)
     return thetas
 
 def calculate_2d_articulated_figure_angles(df, angles, face=1, x_suffix='_X', y_suffix='_Y'):

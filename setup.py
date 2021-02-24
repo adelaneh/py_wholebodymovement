@@ -49,7 +49,7 @@ if __name__ == "__main__":
 
     setuptools.setup(
         name='py_wholebodymovement',
-        version='0.1.0',
+        version='0.1.1',
         description='Python library for modeling whole body movement kinematics.',
         long_description=LONG_DESCRIPTION,
         url='http://www.columbia.edu/~aa4348/py_wholebodymovement',
