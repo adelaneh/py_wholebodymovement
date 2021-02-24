@@ -17,7 +17,7 @@
 # Dev branch marker is: 'X.Y.dev' or 'X.Y.devN' where N is an integer.
 # 'X.Y.dev0' is the canonical version of 'X.Y.dev'
 #
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 
 from py_wholebodymovement.articulated_figure import calculate_2d_articulated_figure_angle
 from py_wholebodymovement.articulated_figure import calculate_2d_articulated_figure_angles
